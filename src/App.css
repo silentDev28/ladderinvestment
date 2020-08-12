@@ -1,38 +1,73 @@
-.App {
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Monoton&display=swap");
+  ffont-family: "Black And White Picture", sans-serif;
+  font-family: "Monoton", cursive;
+}
+body {
+  font-size: 20px;
+}
+#info {
   text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: #371979;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-loader {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.loader {
+  position: absolute;
+  top: 40%;
 }
+* {
+  outline: none !important;
+}
+#connectwithUs {
+  background-color: #371979;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#captions {
+  width: 100%;
+  position: absolute;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  text-align: center;
+  top: 30%;
+}
+#main-caption {
+  font-size: 50px;
+  font-weight: bold;
+  color: #978f3e;
+  text-align: center;
+  width: 100%;
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600&family=Niconne&display=swap");
+  font-family: "Josefin Slab", serif;
+}
+#info-header {
+  font-size: 30px;
+  color: #978f3e;
+  font-family: "Josefin Slab", serif;
+}
+@media (max-width: 414px) {
+  #captions {
+    width: 100%;
+    position: absolute;
+    color: #371979;
+    font-weight: bold;
+    text-align: center;
+    top: 45%;
   }
-  to {
-    transform: rotate(360deg);
+  #main-caption {
+    font-size: 22px;
+    font-weight: bold;
+    color: #978f3e;
   }
 }
